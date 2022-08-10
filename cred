@@ -1,0 +1,51 @@
+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
+
+ssh -i /home/administrator/.ssh/foodhub.pem ubuntu@54.227.89.218
+
+
+http://54.227.89.218/phpmyadmin/
+
+
+http://test-dev-site.pp.ua/
+https://nic.ua/ru/my/domains
+
+
+
+sudo mysql -uroot
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
+sudo service mysql restart
+
+
+sudo service nginx stop
+sudo service apache2 restart
+
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+
+
+https://certbot.eff.org/instructions?ws=apache&os=ubuntufocal
+
+
+https://recipes-hub.com/
+https://analytics.google.com/analytics/web/?authuser=2#/p312794505/reports/intelligenthome?params=_u..nav%3Dmaui
+https://www.google.com/adsense/new/u/0/pub-2877533484116809/sites/my-sites
+https://search.google.com/u/2/search-console?resource_id=sc-domain%3Arecipes-hub.com
+
+
+
+
+
+
+
+sudo a2dismod php7.3
+sudo a2enmod php7.4
+sudo systemctl restart apache2
+sudo update-alternatives --set php /usr/bin/php7.4
+sudo systemctl restart apache2
+
+sudo a2dismod php7.4
+sudo a2enmod php7.3
+sudo systemctl restart apache2
+sudo update-alternatives --set php /usr/bin/php7.3
+sudo systemctl restart apache2
